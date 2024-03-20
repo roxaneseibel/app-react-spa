@@ -11,15 +11,20 @@ import Footer from "./pages/Footer";
 
 function App() {
   return (
-   <Router>
-       <Routes>
-           <Route path="/" element = {<Home />} />
-           <Route path="/products" element = {<Products />} />
-           <Route path="/contact" element = {<Contact />} />
-           <Route path="*" element = { <PageNotFound /> } />            
-       </Routes>
-   </Router>
-   
+    <>
+      <Navbar />
+      <main>
+      {/* Place non-global routes inside an HTML <main> tag */}
+      <Routes>
+          {/* Use Home component for the root path */}
+          <Route index element={<Home />} /> 
+          <Route path="products" element={<Products />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<PageNotFound />} />
+      </Routes>
+      </main>
+      <Footer />
+    </>
   );
 }
 export default App;

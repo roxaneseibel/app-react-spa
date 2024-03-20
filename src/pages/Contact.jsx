@@ -4,7 +4,6 @@ import Footer from "./Footer";
 const Contact = () => {
     return (
         <>
-        <Navbar/>
         <header className="theme-light text-center-desktop text-center-mobile">
 
             <div className="container-text">
@@ -21,7 +20,6 @@ const Contact = () => {
                 <p>This is a link to the <Link to="/products" >Products</Link> page.</p>
            
             </section>
-            <Footer/>
         </>
     );
 }

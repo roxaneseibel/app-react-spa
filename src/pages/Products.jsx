@@ -6,7 +6,6 @@ import Footer from "./Footer";
 export const Products = () => {
     return (
         <>
-        <Navbar />
         <header className="theme-light text-center-desktop text-center-mobile">
 
             <div className="container-text">
@@ -23,7 +22,6 @@ export const Products = () => {
                 <p>This is a link to the <Link to="/contact" >Contact</Link> page.</p>
 
             </section>
-            <Footer/>
         </>
     );
 }
